@@ -13,4 +13,12 @@
     <string name="btn9">9</string>
     <string name="btnSqr">\u221A</string>
     <string name="btnClear">C</string>
+    <string name="btnDivide">\u00F7</string>
+    <string name="btnPercent">%</string>
+    <string name="btnMultiply">\u00D7</string>
+    <string name="btnSubtract">-</string>
+    <string name="btnSign">\u00B1</string>
+    <string name="btnDecimal">.</string>
+    <string name="btnAdd">+</string>
+    <string name="btnEquals">=</string>
 </resources>
