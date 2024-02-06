@@ -5,4 +5,100 @@
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideWest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideNorth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="32dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideSouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="32dp" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|end"
+        android:tag="output"
+        android:text="@string/place_holder_num"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideEast"
+        app:layout_constraintStart_toStartOf="@+id/guideWest"
+        app:layout_constraintTop_toTopOf="@+id/guideNorth" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="btn7"
+        android:text="@string/btn7"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="@+id/guideWest"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="btn8"
+        android:text="@string/btn8"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="btn9"
+        android:text="@string/btn9"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <Button
+        android:id="@+id/btnSqr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="btnSqr"
+        android:text="@string/btnSqr"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="284dp" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="btnClear"
+        android:text="@string/btnClear"
+        android:textSize="30sp"
+        app:cornerRadius="0dp"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="426dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
